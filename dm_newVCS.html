@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="VCSstyle.css">
+	<link href="media/paris.png" rel="icon" type="image/x-icon">
+	<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("pop4");
+  popup.classList.toggle("show");
+}
+		function pop5() {
+  var popup = document.getElementById("pop5");
+  popup.classList.toggle("show");
+}
+		function pop6() {
+  var popup = document.getElementById("pop6");
+  popup.classList.toggle("show");
+}
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 	<div class="header-title col-10">
+			<h1>Green Virtual Care Tool</h1>
+		</div>
+  <div class="header-brand col-2">
+			<a href="https://www.paris-de.org"><img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a>
+  </div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the data management page of planning a New Virtual Care Service</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		<div class="row"><div class="col-11"><h2>Collecting, storing, and/or processing data</h2></div>
+			<div class="popup col-1" onclick="pop1()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+			<span class="popuptext" id="pop1"><a href="https://www.kcl.ac.uk/is-collecting-data-through-new-technologies-actually-helping-us" target="_blank">Health related data is the fastest growing sector in the datasphere</a>.  Data storage and processing requires energy and server space, and a fundamental way to minimise the environmental impacts of your Virtual Care System is to eliminate any unnecessary data. If you haven’t read it earlier, this resource on <a href="https://digitaldecarb.org/data-carbon-ladder/" target="_blank">reducing your data usage</a> offers simple advice.
+</span></div> </div>
+			
+	<form>
+		<label for="a2-1" class="col-11">
+			<h4>A2.1 What data do you plan on collecting, storing and/or processing over the next decade, on an annual basis?</h4></label>
+	<div class="popup" onclick="pop2()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height:35px;">
+						<span class="popuptext" id="pop2">Planning mitigates the risk of wasting compute resources by decreasing the chance that you will over/underestimate what you will need. Overestimation can lead to the use of oversized architecture (unnecessary space allocated for data storage and unnecessary computing power allocated for data processing); underestimation may mean that you do not use an architecture that allows for scaling up. Be aware that underestimating and then moving data is energy intensive and potentially wasteful of hardware resources.</span>
+				  </div>
+		 <textarea id="a2-1" name="a2-1" rows="4" cols="100"></textarea><br>
+		<p></p>
+<h4>If you are planning on developing any of the software for the Virtual Care System in house you should look at <a href="software_p_newVCS.html">these software related questions</a>. </h4>
+						
+			<label for="a2-2" class="col-11">
+			<h4>A2.2 What systems do you have in place to delete data that is no longer needed, and to check and manage duplicate data?</h4>
+			</label>
+	<div class="popup" onclick="pop3()"><img src="media/info.png" alt="Extra information and resources" class="icon" style="height:35px;">
+						<span class="popuptext" id="pop3">Addressing the large amounts of data that are collected but never used (‘dark data’) can significantly reduce energy consumption.  Use the following techniques to achieve this:
+<ul><li><b>Data Governance:</b> Find the relevant regulation for how long data generated by the Virtual Care service needs to be stored, and establish processes to ensure unnecessary data is deleted</li>
+<li><b>Data Management:</b> Organization of data into distinct categories makes it easy to find and gives an accurate and complete view. </li>
+<li><b>Data Sharing Strategy:</b> this can prevent data redundancy. </li>
+<li><b>Tiered Data Storage:</b> Store your data in a way that reflects how regularly it is used and the speed with which it needs to be accessible. Cold storage has a lower energy cost and can be used for archived data.</li></ul></span>
+	  </div>
+		 <textarea id="a2-2" name="a2-2" rows="4" cols="100"></textarea><br>
+		<p></p>
+		<label for="a2-3" class="col-11">
+			<h4>A2.3 Do you have clear guidelines for the end-of-life of the virtual care? What happens with the data when the virtual care system is no longer in use?</h4></label>
+	<div class="popup" onclick="pop6()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height:35px;">
+						<span class="popuptext" id="pop6">It is important to consider end of life at an early stage of planning the virtual care system.
+</span>
+				  </div>
+		 <textarea id="a2-3" name="a2-3" rows="4" cols="100"></textarea><br>
+		<p></p>
+		<label for="a2-4" class="col-11">
+			<h4>A2.4 How do you plan to ensure data sufficiency?</h4></label><div class="popup" onclick="pop5()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height:35px;">
+						<span class="popuptext" id="pop5">Data sufficiency means only collecting and processing data sufficient for the outcome you need to achieve. Data “beyond what is sufficient” can take many forms. For example:
+<ul><li>Images with an unnecessarily high resolution </li>
+<li>Monitoring data collected at an unnecessarily high frequency (what is actually needed to assess health outcomes?)</li>
+<li>High resolution videoconferencing solutions instead of phone calls or low resolution conferencing. </li></ul>
+</span>
+				  </div>
+	
+		 <textarea id="a2-4" name="a2-4" rows="4" cols="100"></textarea><br>
+		  </form>
+			<div class="row">
+					<h4 class="col-11">A2.5 Will you use cloud or local server(s) to host data</h4>
+	
+				</div>
+		  <div class="buttons row">	
+			  <div class="planning col-2"><a href="cloud_p_newVCS.html"><img src="media/cloud.png" class="icon" style="height:50px;"><h3>cloud</h3>
+			  </a></div>
+					<div class="col-1"><p></p></div>
+					<div class="planning col-2"><a href="localserver_dm_p_newVCS.html"><img src="media/local_serv.png" class="icon" style="height:50px;"><h3>local server</h3>
+					</a></div>
+					<div class="col-1"><p></p></div>
+		 	<div class="planning col-2"><h3>not sure</h3><div class="popup" onclick="pop4()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height:55px;">
+						<span class="popuptext" id="pop4">Have you compared a cloud option with the local server option from an environmental sustainability perspective?  Cloud hosting is capable of achieving greater energy efficiency if it is correctly configured. However, be aware that other issues are being raised around cloud, particularly in relation to <a href="https://www.thegreenwebfoundation.org/news/the-politics-of-data-centers/" target="_blank">social justice</a>. Furthermore, while Cloud is usually more efficient for large scale processing, you will want to minimise the transfer of data between your Virtual Care System end users and the cloud as this process requires energy and incurs carbon emissions.  This means it may make sense to undertake <a href="thesaurus.html#edg_com" target="_blank">"edge computing”</a> on your local servers if they are nearer your end users.
+
+
+If your Virtual Care System will be hosted on a hybrid model – so making use of both local servers and cloud – investigate both of these options and consider how best to split the data and processing between them.</span>
+				  </div></div>
+		  </div>	
+				
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4>
+		  </a>	
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+				
+  </aside>
+	
+</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+
+</body>
+</html>

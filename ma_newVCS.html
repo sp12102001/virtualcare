@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="VCSstyle.css">
+<link href="media/paris.png" rel="icon" type="image/x-icon" />
+<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("pop4");
+  popup.classList.toggle("show");
+}
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 <div class="header-title col-10">
+		<h1>Green Virtual Care Tool</h1>
+</div>
+      <div class="header-brand col-2">
+		<a href="https://www.paris-de.org">
+        <img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a></div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the Assessment and Monitoring page in planning a Virtual Care Service</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		  <h2>Assessing and Monitoring</h2>
+				<form>
+
+					<label for="a4-1" class="col-11"><h4>A4.1 How are you going to assess the environmental impact of your service over time?</h4>
+					</label>
+					<a href="info.html#as_env_imp"><img src="media/info.png" alt="Extra information and resources" class="icon" style="height: 35px;"></a>
+						
+				<textarea id="a4-1" name="a4-1" rows="4" cols="100"></textarea>
+					
+					<p></p>
+					
+					<label for="a4-2" class="col-11"><h4>A4.2 Have you considered any intended or unintended environmental impacts (<a href="thesaurus.html#rebound_effects">rebound effects</a>) associated with your Virtual Care Service? </h4>
+					</label>
+						<div class="popup" onclick="pop2()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+					  <span class="popuptext" id="pop2">Decision-making can have unintended consequences called ‘rebound effects’. For example, your Virtual Care Service may be so convenient, in comparison with the in person service it was intended to 'replace', that many more people use it. Instead of the anticipated reduced emissions resulting from reduced patient travel, you might be surprised to find that overall emissions have actually increased.</span></div>
+				  
+					
+					<textarea id="a4-2" name="a4-2" rows="4" cols="100"></textarea>
+					
+					<p></p>
+					
+					<label for="a4-3" class="col-11"><h4>A4.3 Have you considered other possible impacts that might be associated with the virtual care system? </h4>
+					</label>
+						<div class="popup" onclick="pop3()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+					  <span class="popuptext" id="pop3">For example, is the Virtual Care System actually achieving its desired health outcomes. It is important to assess this on an ongoing basis, rather than simply assume it is the case. If desired health outcomes are not met, resources are being wasted.</span></div>
+					
+					<textarea id="a4-3" name="a4-3" rows="4" cols="100"></textarea>
+					
+					<p></p>
+					
+						<label for="a4-4" class="col-11"><h4>A4.4 Have you mapped out how you will address any intended or unintended environmental impacts? </h4>
+						</label>
+							<div class="popup" onclick="pop4()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+					  <span class="popuptext" id="pop4">For an example of rebound effects in practice, consider the scenario in which pressure from multiple Virtual Care System customers persuades a data centre to shift to being powered by renewable energy. This is seen as enhancing its pro-environmental credentials. However, the effects of that change could include:
+						  <ol>
+<li>The change to renewable energy attracts new Virtual Care System customers concerned about the environment. Extra revenue from these customers enables the data centre owner to invest in a new building and equipment for expansion of the data centre, with all the associated embodied carbon costs this entails.</li>
+<li>New virtual care system customers increase the provision of their digital services, thereby stimulating the demand for more data centres and therefore the consumption of more energy. </li>
+<li>A perception that by ‘doing good’ (i.e., swapping to renewable energy to cause fewer carbon emissions) there is no need to worry about proliferating data centres.</li></ol>
+						  This paper gives more detail on <a href="https://www.bmj.com/content/385/bmj-2023-078303" target="_blank">rebound effects in digital healthcare.</a></span></div>
+				  
+						
+							<textarea id="a4-4" name="a4-4" rows="4" cols="100"></textarea>
+						
+				</form>
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4>
+		  </a>	
+		  <a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+		  </a>	
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			
+				</aside>
+</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+</body>
+</html>

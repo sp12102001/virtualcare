@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="VCSstyle.css">
+<link href="media/paris.png" rel="icon" type="image/x-icon" />
+<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("newVCS-pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("newVCS-pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("newVCS-pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("newVCS-pop4");
+  popup.classList.toggle("show");
+}
+		function pop5() {
+  var popup = document.getElementById("newVCS-pop5");
+  popup.classList.toggle("show");
+}
+		function pop6() {
+  var popup = document.getElementById("newVCS-pop6");
+  popup.classList.toggle("show");
+}
+		function pop7() {
+  var popup = document.getElementById("newVCS-pop7");
+  popup.classList.toggle("show");
+}
+		function pop8() {
+  var popup = document.getElementById("newVCS-pop8");
+  popup.classList.toggle("show");
+}
+		function pop9() {
+  var popup = document.getElementById("newVCS-pop9");
+  popup.classList.toggle("show");
+}
+		function pop10() {
+  var popup = document.getElementById("newVCS-pop10");
+  popup.classList.toggle("show");
+}
+		
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 <div class="header-title col-10">
+		<h1>Green Virtual Care Tool</h1>
+</div>
+      <div class="header-brand col-2">
+		<a href="https://www.paris-de.org">
+        <img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a></div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the cloud hosting page in planning a  Virtual Care Service</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		  <div class="row"><div class="col-11"><h2>Cloud Hosting </h2></div>
+			<div class="popup col-1" onclick="pop1()"><img src="media/info.png" alt="Extra information and resources" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop1">These resources provide information about the whole ecosystem around green software, including data centres and the energy grid. For context you may want to refer back to this <a href="https://learn.greensoftware.foundation/" target="_blank">short learning module</a> from the Green Software Foundation, or this discussion of <a href="https://github.com/climateaction-tech/grid-aware-software" target="_blank">grid aware software</a>.  
+</span></div>
+			  </div>
+				<form>
+					<div class="row">
+					<label for="a1-2-1-1" class="col-11"><h4>How is the data centre powered?  If it is mainly using renewables, is it using its own renewable energy, or is it powered from the grid?</h4>
+					</label>
+					
+					</div>
+					<div class="row" >
+						<textarea id="a1-2-1-1" name="a1-2-1-1" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a1-2-1-2" class="col-11"><h4>If it is powered from the grid, where the proportion of the energy supplied that comes from renewable sources is always changing (in response to sun and wind conditions for example), does your hosting provider offer any options for temporal or spatial shifting?
+</h4>
+					</label>
+						<div class="popup col-1" onclick="pop3()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop3">Temporal shifting means making best use of periods when renewables are powering the grid - so maximizing the data processing undertaken during these times. Spatial shifting means allowing your processing to run at a data centre in a different location when the energy supply to the primary data centre is low in renewables.  Clearly the degree to which you can fine-tune a Virtual Care system will be limited – data processing to provide monitoring, for example, may need to be happening constantly. But there may be considerable flexibility around other processing, such as reporting and data maintenance tasks.</span></div>
+					</div>
+					<div class="row">
+					<textarea id="a1-2-1-2" name="a1-2-1-2" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a1-2-1-3" class="col-11"><h4>What types of <a href="thesaurus.html#cooling_systems" target="_blank">cooling systems</a> are being used and how much energy and water do they consume?
+</h4></label>
+					<div class="popup col-1" onclick="pop4()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop4">Inefficient cooling systems in data centres can significantly increase energy and water consumption, and if excessive heat builds up, this can shorten the lifespan of data centre hardware. 
+
+</span></div>
+					</div>
+					<div class="row">
+					<textarea id="a1-2-1-3" name="a1-2-1-3" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+						<label for="a1-2-1-4" class="col-11"><h4>Are the PUE, CUE, and WUE sustainability metrics (measuring Power, Carbon, and Water Usage Efficiency respectively), available for the data centre? What are the values for these?
+</h4></label>
+						<div class="popup col-1" onclick="pop5()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop5">A PUE of 1 is the ideal as it would indicate that all the power supplied to a data centre was used for the computing equipment - so no energy was necessary for things like lighting or cooling. A CUE of 0 is ideal as it would indicate that the data centre operated entirely on carbon free energy sources.  A WUE of 0 is ideal as it would indicate that the data centre consumed no water whilst providing its data storage and processing services.  Many other useful <a href="https://www.sunbirddcim.com/infographic/top-30-data-center-sustainability-metrics" target="_blank">data centre sustainability metrics</a> are available.
+</span></div></div>
+						<div class="row">
+							<textarea id="a1-2-1-4" name="a1-2-1-4" rows="4" cols="100"></textarea>
+						</div>
+					<p></p>
+					<div class="row">
+						<label for="a1-2-1-5" class="col-11"><h4>Is excess heat from the data centre recovered and reused, so it can displace fossil fuel heat sources?
+</h4></label>
+						</div>
+						<div class="row">
+							<textarea id="a1-2-1-5" name="a1-2-1-5" rows="4" cols="100"></textarea>
+						</div>
+						<p></p>
+						<div class="row">
+						<label for="a1-2-1-6" class="col-11"><h4>Is there a plan for the data centre to be sustainably <a href="https://www.simslifecycle.com/resources/white-paper-data-center/" target="_blank">decommissioned </a> if/when it comes to its end of life?</h4></label>
+						<div class="popup col-1" onclick="pop7()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop7">The proliferation, scale, and rate of technological evolution and environmental impacts of data centres are making these increasingly important questions. </span></div></div>
+				  <div class="row">
+							<textarea id="a1-2-1-6" name="a1-2-1-6" rows="4" cols="100"></textarea>		
+				  </div>
+					<p></p>
+						<div class="row">
+						<label for="a1-2-1-7" class="col-11"><h4>Would your virtual care system be hosted in a verified green data centre?
+</h4></label>
+						<div class="popup col-1" onclick="pop8()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop8">The Green Web Foundation <a href="https://www.thegreenwebfoundation.org/tools/directory/" target="_blank">maintains a verified list</a> and provides <a href="https://www.thegreenwebfoundation.org/what-we-accept-as-evidence-of-green-power/" target="_blank">this information for data centre operators and web hosting providers who want to get verified</a>.
+
+</span></div></div>
+				  <div class="row">
+							<textarea id="a1-2-1-7" name="a1-2-1-7" rows="4" cols="100"></textarea>		
+				  </div>
+			<p></p>
+						
+			<p></p>
+						<div class="row">
+						<label for="a1-2-1-8" class="col-11"><h4>What resource pooling options are offered by your hosting provider? 
+</h4></label>
+						<div class="popup col-1" onclick="pop10()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop10">Resource pooling in a data centre employs economies of scale to minimise energy use across customers.
+</span></div></div>
+				  <div class="row">
+							<textarea id="a1-2-1-8" name="a1-2-1-8" rows="4" cols="100"></textarea>		
+				  </div>
+				</form>
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4>
+		  </a>	
+		  <a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+		  </a>	
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+				
+  </aside>
+	
+	</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+</body>
+</html>

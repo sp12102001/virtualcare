@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="VCSstyle.css">
+<link href="media/paris.png" rel="icon" type="image/x-icon" />
+<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("pop4");
+  popup.classList.toggle("show");
+}
+		function pop5() {
+  var popup = document.getElementById("pop5");
+  popup.classList.toggle("show");
+}
+		function pop6() {
+  var popup = document.getElementById("pop6");
+  popup.classList.toggle("show");
+}
+	function pop7() {
+  var popup = document.getElementById("pop7");
+  popup.classList.toggle("show");
+}
+		function pop8() {
+  var popup = document.getElementById("pop8");
+  popup.classList.toggle("show");
+}
+		function pop9() {
+  var popup = document.getElementById("pop9");
+  popup.classList.toggle("show");
+}	
+	function pop10() {
+  var popup = document.getElementById("pop10");
+  popup.classList.toggle("show");
+}
+		function pop11() {
+  var popup = document.getElementById("pop11");
+  popup.classList.toggle("show");
+}	
+		
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 <div class="header-title col-10">
+		<h1>Green Virtual Care Tool</h1>
+</div>
+      <div class="header-brand col-2">
+		<a href="https://www.paris-de.org">
+        <img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a></div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the data management of local servers page in planning a Virtual Cares Service </h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+			<div class="row"><div class="col-11"><h2>Hosting on local servers</h2></div><div class="popup col-1" onclick="pop1()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop1">The questions assume you have an existing server room, cooled by an air conditioning system, and would be enhancing this to host the new Virtual Care System.  However, they are also relevant if you are setting up a server room from scratch to host your Virtual Care System. Read more about <a href="info.html#ser_roo_sus" target="_blank">Server room sustainability</a>.<p>If your “local server” is actually housed in a large scale data centre it would be worth considering the questions in the “cloud” option as well, even if the data centre only serves your organisation so you are not going through a “hosting provider”.</p></span></div>
+					<div class="popup col-1" onclick="pop2()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop2">Ask your IT team these questions (pdf) and assess their answers, using the explanatory information provided against each question, to determine whether you want to seek improvemnents to the environmental sustainability of your local server option.</span></div>
+					</div>
+				<form>
+					<div class="row">
+					<label for="a2-2-1" class="col-11"><h4>How is your server room powered?
+</h4></label>
+					<div class="popup col-1" onclick="pop3()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop3">You may want to consider swapping your energy supplier for one that makes more use of renewable energy.</span></div>
+					</div>
+					<div class="row" >
+						<textarea id="a2-2-1" name="a2-2-1" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a2-2-2" class="col-11"><h4>Are you under pressure to upgrade your reserve energy system (Uninterruptible Power Supply or UPS) to a more energy efficient model? </h4></label>
+						<div class="popup" onclick="pop4()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop4">Be aware a new UPS will come with a substantial embodied carbon footprint. You should avoid upgrading until your current system is at end of life.</span></div>
+					</div>
+					<div class="row">
+					<textarea id="a2-2-2" name="a2-2-2" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a2-2-3" class="col-11"><h4>If you have a generator to back up your UPS, what fuel does it use?</h4></label>
+						<div class="popup" onclick="pop5()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop5">Bio fuels and natural gas are better than diesel from an environmental perspective, and Hydrogenated Vegetable Oil (HVO) may also be a good alternative.  Also consider the transport emissions associated with your choice of fuel.</span></div>
+						</div>
+					<div class="row">
+					<textarea id="a2-2-3" name="a2-2-3" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+						<label for="a2-2-4" class="col-11"><h4>What are the environmental impacts of your server room air conditioning system?</h4></label>
+							<div class="popup" onclick="pop6()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop6">Monitor the temperature of your server room environment. Overcooling is common in server rooms and temperatures can often be raised without any adverse effects.
+<p>Aim to maximise the energy efficiency of the AC system. Considerable improvements have been made to the energy efficiency of AC systems in recent years, but be aware that these energy efficiency gains are likely to be dwarfed by the carbon footprint from the production of a new system, so don't be tempted to replace your existing system without actually assessing its efficiency - or its proximity to end of life - first.</p>
+Consider the <a href="https://www.epa.gov/ghgemissions/understanding-global-warming-potentials" target="_blank">Global Warming Potential (GWP)</a> of the coolant used by your AC system.  If this is high, find out if your system will run on a lower GWP coolant.  (Note that if you are using an HFC coolant you should look to replace it as soon as possible, even if this does mean bringing forward the replacement of your whole AC system).</span>
+</div>
+						</div>
+						<div class="row">
+							<textarea id="a2-2-4" name="a2-2-4" rows="4" cols="100"></textarea>
+						</div>
+					
+					<p></p>
+					<div class="row">
+						<label for="a2-2-6" class="col-11"><h4>Are the servers/ server racks in your server room arranged to maximise front to rear air flow?</h4></label>
+							<div class="popup" onclick="pop8()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop8">This will maximise energy efficiency.</span></div>
+						<div class="popup col-1" onclick="pop10()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="pop10">If your server room contains multiple server racks, consider “in row” cooling, where your air conditioning units are positioned as close as possible to the server cabinets to increase their energy efficiency.</span></div>
+				
+						</div>
+						<div class="row">
+							<textarea id="a2-2-6" name="a2-2-6" rows="4" cols="100"></textarea>
+						</div>
+					<p></p>
+					
+					<div class="row">
+						<label for="a2-2-8" class="col-11"><h4>Can you recover the servers’ waste heat for re-use? For example, using the generated heat to warm the building. </h4></label>
+						</div>
+						<div class="row">
+							<textarea id="a2-2-8" name="a2-2-8" rows="4" cols="100"></textarea>
+						</div>
+					<p></p>
+					
+					<p></p>
+					
+					<div class="row">
+						<label for="a2-2-11" class="col-11"><h4>Do you make environmental impact metrics readily available for your server room?</h4></label>
+							<div class="popup" onclick="pop11()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height:35px;">
+						<span class="popuptext" id="pop11">PUE and CUE are common metrics and measure Power and Carbon Usage Efficiency, respectively. A PUE of 1 is ideal as it would indicate that all the power supplied to a server room was used for the computing equipment - so no energy was necessary for things like lighting or cooling. A CUE of 0 is ideal as it would indicate that the server room operated entirely on carbon free energy sources. 
+</span></div>
+						</div>
+						<div class="row">
+							<textarea id="a2-2-11" name="a2-2-11" rows="4" cols="100"></textarea>
+						</div>
+				</form>
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4></a>	
+			  <a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+			  </a>
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+				
+  </aside>
+	
+	</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+</body>
+</html>

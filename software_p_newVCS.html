@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="VCSstyle.css">
+<link href="media/paris.png" rel="icon" type="image/x-icon" />
+<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("newVCS-pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("newVCS-pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("newVCS-pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("newVCS-pop4");
+  popup.classList.toggle("show");
+}
+		function pop5() {
+  var popup = document.getElementById("newVCS-pop5");
+  popup.classList.toggle("show");
+}
+		function pop6() {
+  var popup = document.getElementById("newVCS-pop6");
+  popup.classList.toggle("show");
+}
+		function pop7() {
+  var popup = document.getElementById("newVCS-pop7");
+  popup.classList.toggle("show");
+}
+		function pop8() {
+  var popup = document.getElementById("newVCS-pop8");
+  popup.classList.toggle("show");
+}
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 <div class="header-title col-10">
+		<h1>Green Virtual Care Tool</h1>
+</div>
+      <div class="header-brand col-2">
+		<a href="https://www.paris-de.org">
+        <img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a></div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the software procurement page in plannining a  Virtual Care Service</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		  <div class="row"><div class="col-11"><h2>Procuring software or developing it in house</h2></div>
+			<div class="popup col-1" onclick="pop1()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop1">If you are not able to answer this questions yourself, ask your potential suppliers the questions below (also in pdf here) and assess their answers, using the explanatory information provided against each question, before deciding to use them</span></div>
+			  </div>
+				<form>
+					<div class="row">
+					<label for="a1-2-2-1" class="col-11"><h4>What green software principle does your provider, or in house tech team, adopt?</h4>
+					</label>
+					<div class="popup col-1" onclick="pop2()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop2">Ask if your supplier adopts green software principles. These include, for example, maximizing the efficiency of the most regularly run sections of code, not over engineering the code for accuracy beyond what is required in that specific application, and minimizing the data the software is processing. The Green Software Foundation’s 
+<a href="https://greensoftware.foundation/articles/10-recommendations-for-green-software-development" target="_blank">Ten Recommendations for Green Software Development</a> provides more detail on these, as does this resource on <a href="https://digitaldecarb.org/data-carbon-ladder/" target="_blank">reducing your data usage</a>, one of the ten recommendations.  Be aware that following these recommendations will not eliminate environmental impacts <a>because of rebound effects</a>, but it will reduce them.</span></div>
+					</div>
+					<div class="row" >
+						<textarea id="a1-2-2-1" name="a1-2-2-1" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a1-2-2-2" class="col-11"><h4>Does the software contain in-built carbon calculators so that you can monitor your carbon usage?
+</h4>
+					</label>
+						<div class="popup col-1" onclick="pop3()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop3">In-built calculators mean that tools have been incorporated into the software you procure to allow you to calculate carbon emissions arising from the use of the software.  Such tools might be:
+						<ul><li>One of <a href="https://www.thegreenwebfoundation.org/tools/#carbon-metrics" target="_blank">these from the Green Web Foundation</a> or</li>
+							<li><a href="https://www.cloudcarbonfootprint.org/" target="_blank">Cloud Carbon Footprint</a>. This is an open source tool that allows you to measure, monitor and reduce your cloud carbon emissions.</li></ul>
+</span></div>
+					</div>
+					<div class="row">
+					<textarea id="a1-2-2-2" name="a1-2-2-2" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="a1-2-2-3" class="col-11"><h4>Does the software you are procuring or developing include AI?
+</h4></label>
+					<div class="popup col-1" onclick="pop4()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop4">AI has a high energy consumption.  Virtual Care Systems are currently unlikely to offer AI enhanced solutions and may just comprise conventional telehealth and remote monitoring, but <a href="https://healthtechmagazine.net/article/2024/03/Integrating-ai-with-virtual-care-perfcon" target="_blank">AI is increasingly being introduced into these systems</a>, particularly to assist with remote monitoring.  
+Check whether AI is incorporated into the Virtual Care System you are considering.  If it is, ask your supplier the following questions:
+
+							<ul><li>How were carbon emissions minimized during the training of the AI?  For example, were energy efficient (low power) configurations used during training and/or was shared data used in training to minimize big data set redundancy with all the unnecessary environmental impacts that implies?</li>
+							<li>Is the AI included in the Virtual Care System optimally tuned such that it uses as little energy as possible whilst preserving the necessary level of performance? </li></ul>
+</span></div>
+					</div>
+					<div class="row">
+					<textarea id="a1-2-2-3" name="a1-2-2-3" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+						<label for="a1-2-2-4" class="col-11"><h4>What degree of interoperability is there between the software you wish to procure or develop, and other software you use, or are planning to use?
+</h4></label>
+						<div class="popup col-1" onclick="pop5()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop5">This is important to consider for long term sustainability of the service. A high level of interoperability between your software systems means there is a reduced likelihood of complex and energy intensive integration or replacement projects now and in the future.
+Interoperability in software is usually achieved through Application Programming Interfaces (APIs). Check what API standards the software adheres to and how that compares with API standards of any existing or planned software you may want the Virtual Care system to integrate with.
+For an introduction to API standards, this <a href="https://blog.axway.com/learning-center/apis/basics/api-industry-standards" target="_blank">industry blog</a> is useful. It outlines the different API standards in different sectors, including health. <a href="https://www.healthit.gov/isa/understanding-emerging-api-based-standards" target="_blank">Interoperability standards in Health IT</a> are still emerging – with <a href="https://www.hl7.org/fhir/" target="_blank">FHIR</a> one of the leaders.</span></div></div>
+						<div class="row">
+							<textarea id="a1-2-2-4" name="a1-2-2-4" rows="4" cols="100"></textarea>
+						</div>
+					<p></p>
+					<div class="row">
+						<label for="a1-2-2-5" class="col-11"><h4>Can the software be used on digital devices that are 5 years old or more?
+</h4></label>
+						<div class="popup col-1" onclick="pop6()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop6">The energy gains from new materials do not offset the impacts linked to their manufacturing. Given this, it is important that the software can operate on the oldest possible equipment, so no new equipment needs to be purchased to access the software.
+</span></div></div>
+						<div class="row">
+							<textarea id="a1-2-2-5" name="a1-2-2-5" rows="4" cols="100"></textarea>
+						</div>
+						<p></p>
+						<div class="row">
+						<label for="a1-2-2-6" class="col-11"><h4>Can the software work on existing devices rather than requiring additional purchases? For example, can it work on a user’s phone rather than needing a specific accessory?</h4></label>
+						<div class="popup col-1" onclick="pop7()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop7">If the software can work on existing devices, it saves the need to manufacture further digital devices, therefore reducing environmental impacts associated with mining, manufacture, and waste.
+However, if a user’s own device, typically their phone, is, for example, used to host monitoring tasks that form part of the Virtual Care system, then the user may have to pay for this themselves. This is because it may be difficult to separate out the element of their ongoing phone costs that are attributable to the virtual care service. Having users cover the costs themselves is an equity issue.</span></div></div>
+				  <div class="row">
+							<textarea id="a1-2-2-6" name="a1-2-2-6" rows="4" cols="100"></textarea>		
+				  </div>
+					<p></p>
+						<div class="row">
+						<label for="a1-2-2-7" class="col-11"><h4>What regular updates does your software provider or in house tech team give to support the long term use of the digital service?
+</h4></label>
+						<div class="popup col-1" onclick="pop8()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop8">Make sure the service guarantees the provision of corrective updates throughout the expected lifespan of the software you are procuring. As well as prolonging the lifespan of the software, this reduces the risk of service-related equipment becoming obsolescent as the software running on it is no longer supported.  
+Be aware that owing to the fast evolution of technology and the consequent expectations around it, it is possible for the lifespan of digital services to be over extended.  So, for example, a virtual care system user interface, for the patient or healthcare professional, might appear increasingly clunky as it ages, and this might ultimately result in the patient or healthcare professional not using it.  Clearly it would then not achieve its intended health benefits and yet still be running with the associated environmental impacts.  
+</span></div></div>
+				  <div class="row">
+							<textarea id="a1-2-2-7" name="a1-2-2-7" rows="4" cols="100"></textarea>		
+				  </div>
+				</form>
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4>
+		  </a>	
+		  <a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+		  </a>	
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+				
+  </aside>
+	
+	</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+</body>
+</html>

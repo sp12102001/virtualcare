@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="VCSstyle.css">
+	<link href="media/paris.png" rel="icon" type="image/x-icon">
+	<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("newVCS-pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("newVCS-pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("newVCS-pop3");
+  popup.classList.toggle("show");
+}
+		
+		function pop4() {
+  var popup = document.getElementById("newVCS-pop4");
+  popup.classList.toggle("show");
+}
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 	<div class="header-title col-10">
+			<h1>Green Virtual Care Tool</h1>
+		</div>
+      	<div class="header-brand col-2">
+			<a href="https://www.paris-de.org"><img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a>
+		</div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at the initial page of planning a Virtual Care Service</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		  <div class="row"><h2 class="col-11">What are your plans for your Virtual Care Service?</h2><div class="popup col-1" onclick="pop1()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+					  <span class="popuptext" id="newVCS-pop1">It is important to consider these questions before you work through this tool. The exercise will allow you to determine potential ‘hot spots’ for the consideration of environmental impacts and help guide you through the questions to come.</span></div></div>
+				<form>
+					
+					<label for="newVCS_1" class="col-11"><h4>What is the Virtual Care Service you are planning?</h4>
+					</label>
+					
+				  
+				  <div class="row">
+					<textarea id="newVCS_1" name="newVCS_1" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="newVCS_2" class="col-11"><h4>Who is going to use this Virtual Care Service? </h4></label>
+						<div class="popup" onclick="pop2()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop2">List or map all the groups of people that are going to use the VCS. Don't forget those prescribing and monitoring it such as health professional, in addition to patients and carers.</span></div>
+					</div>
+					<div class="row">
+					<textarea id="newVCS_2" name="newVCS_2" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					<div class="row">
+					<label for="newVCS_3" class="col-11"><h4>How will your Virtual Care Service function? </h4></label>
+						<div class="popup" onclick="pop3()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop3">List or map all the devices, services and infrastructures that will be needed for this virtual care service, and how they will interact with each other. Including those devices that may be supplied or used by the patient (e.g. phone, laptop)</span></div>
+						</div>
+					<div class="row">
+					<textarea id="newVCS_3" name="newVCS_3" rows="4" cols="100"></textarea>
+					</div>
+					<p></p>
+					
+				</form>
+             </div>		
+		<aside class="col-2" >
+			<h4>More questions to ask about planning your VCS in the following areas:</h4>
+			<a href="p_newVCS.html"><h4>Procurement</h4></a>	
+			<a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+			</a>	
+			<a href="sr_newVCS.html"><h4>Sustainability Regulations</h4></a>
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+  </aside>
+	</div>
+	
+	<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+
+</body>
+</html>

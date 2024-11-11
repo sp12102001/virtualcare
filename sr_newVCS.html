@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="VCSstyle.css">
+<link href="media/paris.png" rel="icon" type="image/x-icon" />
+<title>Sustainable Virtual Care System Planning and Monitoring Tool</title>
+	<script>
+// When the user clicks on div, open the popup
+function pop1() {
+  var popup = document.getElementById("newVCS-pop1");
+  popup.classList.toggle("show");
+}
+		function pop2() {
+  var popup = document.getElementById("newVCS-pop2");
+  popup.classList.toggle("show");
+}
+		function pop3() {
+  var popup = document.getElementById("newVCS-pop3");
+  popup.classList.toggle("show");
+}
+		function pop4() {
+  var popup = document.getElementById("newVCS-pop4");
+  popup.classList.toggle("show");
+}
+</script>
+</head>
+
+<body>
+<header class="row col-12">
+	 <div class="header-title col-10">
+		<h1>Green Virtual Care Tool</h1>
+</div>
+      <div class="header-brand col-2">
+		<a href="https://www.paris-de.org">
+        <img src="media/Paris DE colour.png" alt="PARIS-DE logo" style="height:70px; align:right;"></a></div>
+</header>
+<nav class="row col-12">
+		<h6 class="breadcrumb">You are at sustainability regulations pages in planning a  Virtual Care System</h6>
+</nav>
+
+<div class="main row col-12">
+
+	<div class="col-2">
+			<section >	
+			<h4>How to use this site</h4>
+			<p>This tool shows you the questions that will need to be answered to implement and maintain a sustainable Virtual Care System. You probably won't be able to answer all the questions by yourself, so identify the people that have the knwodlege and skills on the different areas covered by this tool and ask them the questions. They might be people in other departments or even some of the suppliers used by your organisation.</p>
+			<p>Beside the questions you will sometimes see an icon. Clicking on them will provide extra information. Below is a brief explanation of what each icon means:</p>
+<p><img class="icon" src="media/why.png" alt="Why should you ask this question" style="height:48px;"><b>Why should you ask this question?</b></p><br>
+			<p><img class="icon" src="media/info.png" alt="Extra information and resources" style="height:48px;"><b>Read more about this subject</b> </p><br>
+		<p><img class="icon" src="media/idea.png" alt="ideas that you could try" style="height:48px;"><b>Suggest actions to be taken next</b></p>
+
+		</section>
+	</div>
+	
+		<div class="core col-8">
+		  <div class="row"><div class="col-11"><h2>Sustainability: Workforce and Regulations </h2></div>
+			<div class="popup col-1" onclick="pop1()"><img src="media/idea.png" alt="ideas that you could try" class="icon" style="height: 35px;">
+			<span class="popuptext" id="newVCS-pop1">You may need to involve individuals in the leadership team to best address the questions in this section. Members of an organisation’s leadership team play a pivotal role in driving environmental sustainability within the organisation: They must understand its importance and take proactive steps to integrate it into the strategic vision and operational practices.</span></div></div>
+	
+			
+				<form>
+					
+					<div  class="col-11"><label for="a3-1"><h4>A3.1 What environmental sustainability guidelines and regulation is your organisation required to follow?</h4> </label></div>
+					<div class="popup col-1" onclick="pop4()"><img src="media/info.png" alt="Extra information and resources" class="icon" style="height: 35px;"><span class="popuptext" id="newVCS-pop4">Useful links include:
+<ul><li><a href="https://ictc-ctic.ca/reports/building-a-sustainable-ict-ecosystem" target="_blank">Organisational level Strategies and Best Practices for reducing Environmental Harms in a Digital World (pages 32 to 47).</a></li>
+<li>World Health Organisation: high level <a href="https://www.who.int/publications/i/item/9789240012226" target="_blank">guidance on environmentally sustainable healthcare facilities.</a></li></ul>
+<p>Note: guidelines and regulation vary significantly <a href="https://ew-nutrition.com/en-uk/guide-sustainability-regulations/" target="_blank">by geography and are changing rapidly</a>. Establish what is currently required for your own organization.</p>
+<p>We encourage your organization to develop an environmental policy or charter that has been verified by a third party.</p>
+</span>
+						</div>
+					<textarea id="a3-1" name="a3-1" rows="4" cols="100"></textarea>
+					
+					<p></p>
+					
+					<label for="a3-2" class="col-11"><h4>A3.2 How is your organisation set up to ensure capacity and skillsets exist in house to best manage the virtual care product/service from a sustainability point of view?</h4></label>
+						<div class="popup" onclick="pop2()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop2">Having someone within an organisation with sustainability as their core agenda is important so they can champion decisions based on reducing environmental impacts. They can also ensure that sustainability goals and initiatives align with the organisation's overall strategic objectives and help integrate sustainability considerations into business strategy, operations, and decision-making processes. Depending on your role, the following questions may be applicable directly to you, or they may need to be posed to senior colleagues:
+<ul style="text-align: left;"> <li>Has your organisation appointed somebody to champion sustainability issues?</li>
+<li>Does the sustainability expert have digital expertise? If not, has someone in the digital technology team been identified to be responsible for this contribution to sustainability?</li></ul>
+</span></div>
+					
+					<textarea id="a3-2" name="a3-2" rows="4" cols="100"></textarea>
+					<p></p>
+				
+					<label for="a3-3" class="col-11"><h4>A3.3 Has your organisation’s workforce, including those who may be using the Virtual Care System, been trained to follow sustainability guidelines, and how will support for this be provided? </h4></label>
+						<div class="popup" onclick="pop3()"><img src="media/why.png" alt="Why should you ask this question" class="icon" style="height: 35px;">
+						<span class="popuptext" id="newVCS-pop3">Supporting staff in sustainability involves providing resources, training, incentives, and recognition. The end goal is to make sustainability 'the norm'. Depending on your role in your organisation, the following questions may be applicable directly to you, or they may need to be posed to senior colleagues.
+<ul style="text-align: left;"><li>Will the individuals and teams deploying and supporting the virtual care system be sufficiently trained from a sustainability perspective? Will they be provided with training materials and workshops that are maintained over time to reflect new policies and practices arising?</li>
+<li>Will these individuals and teams be incentivised to make progress toward the goals outlined in their training, including time for sustainability activities, recognition for completion, and so on?</li></ul>
+</span></div>
+						
+					<textarea id="a3-3" name="a3-3" rows="4" cols="100"></textarea>
+					
+					
+		  </form>
+  </div>		
+		<aside class="col-2">
+			<h4>Go to planning:</h4>
+		  <a href="newVCS.html">
+			  <h4>Initial page</h4></a>
+		  <a href="p_newVCS.html"><h4>Procurement</h4>
+		  </a>	
+		  <a href="dm_newVCS.html"><h4>Data Management and Processing</h4>
+		  </a>	
+			<a href="ma_newVCS.html"><h4>Monitoring and Assessment</h4></a>
+				
+  </aside>
+	
+	</div>
+	
+<footer class="col-12">
+		<ul>
+    		<li><a href="Index.html"><span>Back to the start</span></a></li>
+    		<li><a href="thesaurus.html"><span>Theasurus</span></a></li>
+    		<li><a href="info.html"><span>Information and references</span></a></li>
+    		<li><a href="tool_dev.html"><span>About this tool</span></a></li>
+			<li>This version is a prototype and will not save text. Please do not share.</li>
+			
+	  </ul>
+</footer>
+
+</body>
+</html>
